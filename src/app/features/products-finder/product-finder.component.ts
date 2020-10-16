@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product-finder.component.scss"]
 })
 export class ProductFinderComponent implements OnInit {
+    public search: string = "";
     public products: any = [];
 
     constructor(
@@ -17,7 +18,8 @@ export class ProductFinderComponent implements OnInit {
     }
 
     eventEmitted(emitted: any) {
-        this.products = emitted;
+        this.search = emitted.search;
+        this.products = emitted.products;
     }
 
 }

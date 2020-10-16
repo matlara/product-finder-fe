@@ -7,11 +7,26 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  @Input()
-  products: any;
+    @Input()
+    search: string = "";
 
-  constructor() { }
+    @Input()
+    products: any;
 
-  ngOnInit() { }
+    constructor() { }
+
+    ngOnInit() { }
+
+    public isSearchPalindrome() {
+        if(this.search.length > 2) {
+            var re = /[\W_]/g;
+            var lowRegStr = String(this.search).toLowerCase().replace(re, '');
+            var reverseStr = lowRegStr.split('').reverse().join(''); 
+            return reverseStr === lowRegStr;
+        }
+        else {
+            return false;
+        }
+    }
 
 }

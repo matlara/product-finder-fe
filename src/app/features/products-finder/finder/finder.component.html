@@ -1,9 +1,17 @@
 
-<input 
-    class="form-control mr-sm-2" 
-    type="search" 
-    placeholder="Que estas buscando?" 
-    aria-label="Search" 
-    (keydown.enter)="findProducts(finder.value)" 
-    #finder
->
+<section id="finder-nav">
+
+    <div class="finder">
+
+        <input 
+            class="form-control mr-sm-2" 
+            type="search" 
+            placeholder="Que estas buscando?" 
+            aria-label="Search" 
+            (keydown.enter)="findProducts(finder.value)" 
+            #finder
+        >
+
+    </div>
+
+</section>

@@ -1,10 +1,35 @@
 
 <div>
 
-    <h1>PRODUCT FINDER</h1>
+    <section id="header">
+        <div class="header__info">
+            <span>
+                Servicio al cliente de Lider.cl: Whatsapp 
+                <span class="header__info-special">+56957211492</span>
+                | Horario: de lunes a viernes de 8:00 a 22:00 y sabado, domingo y festivos 9:00 a 21:00
+            </span>
+        </div>
+    </section>
 
     <app-finder (eventEmitter)="eventEmitted($event)"></app-finder>
 
-    <app-products [products]="products"></app-products>
+    <section id="content">
+
+        <div class="finder-results">
+    
+            <p *ngIf="search">Resultados para <strong>{{ search }}</strong>:</p>
+        
+            <div class="finder-results__products-container">
+                <app-products [search]="search" [products]="products"></app-products>
+            </div>
+
+            <div class="finder-info">
+                <span class="text-left">Ver Informacion Legal</span>
+                <span class="text-right">ARROW</span>
+            </div>
+
+        </div>
+
+    </section>
 
 </div>

@@ -45,7 +45,12 @@ export class FinderComponent implements OnInit {
         );
     }
 
-    this.eventEmitter.emit(this.products);
+    const event = {
+        search: search,
+        products: this.products
+    }
+
+    this.eventEmitter.emit(event);
   }
 
 }

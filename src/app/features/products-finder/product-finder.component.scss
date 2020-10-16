@@ -1,0 +1,28 @@
+.header__info {
+    background-color: darkblue;
+    padding: 10px 15px 10px 15px;
+    color: azure;
+}
+
+.header__info-special {
+    color: blue;
+}
+
+.finder-results {
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+.finder-results__products-container {
+    margin-left: 150px;
+}
+
+.finder-info {
+    padding: 10px;
+    height: 20px;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+}
