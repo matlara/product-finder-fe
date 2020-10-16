@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-//import { AppService } from "./app.service";
 
 @Component({
   selector: "app-root",
@@ -13,19 +12,9 @@ export class AppComponent implements OnInit {
   public isBreadcrumbActive!: boolean;
 
   constructor(
-    //private readonly service: AppService
   ) {}
 
   public ngOnInit(): void {
     
-    /*
-    this.service.currentPage$.subscribe(current => {
-      this.currentPage = current;
-    });
-
-    this.service.isBreadcrumbsActive$.subscribe(
-      isActive => (this.isBreadcrumbActive = isActive)
-    );
-    */
   }
 }
