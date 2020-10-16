@@ -1,0 +1,54 @@
+{
+  "name": "product-finder-fe",
+  "version": "1.0.0",
+  "author": "Matias Lara De Nicola",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "jest --coverage",
+    "coverage": "jest --no-cache --coverage -u --runInBand"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format:staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~8.2.14",
+    "@angular/cdk": "~8.2.3",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "lottie-web": "^5.7.1",
+    "ng2-rut": "^0.3.2",
+    "rxjs": "~6.5.3",
+    "tslib": "1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "8.3.1",
+    "@angular-devkit/build-angular": "^0.803.24",
+    "@angular/cli": "~8.3.19",
+    "@angular/compiler-cli": "~8.2.14",
+    "@angular/language-service": "~8.2.14",
+    "@types/jest": "24.0.23",
+    "canvas": "^2.6.1",
+    "codelyzer": "5.2.0",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1",
+    "protractor": "~5.4.2",
+    "stubby": "^5.0.0",
+    "ts-node": "~8.5.2",
+    "tslint": "~5.20.1",
+    "typescript": "~3.5.3"
+  }
+}
