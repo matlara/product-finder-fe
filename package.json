@@ -9,12 +9,6 @@
     "test": "jest --coverage",
     "coverage": "jest --no-cache --coverage -u --runInBand"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run format:staged",
-      "pre-push": "npm run test"
-    }
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
