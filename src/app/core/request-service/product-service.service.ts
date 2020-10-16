@@ -59,7 +59,7 @@ export class ProductService {
     const params = { word: word };
     const urlByBrandDescription = this.urlBase + "word/" + params.word;
 
-    return this.http.get(urlByBrandDescription, { headers, params }).pipe(
+    return this.http.get(urlByBrandDescription, { headers }).pipe(
       map((data: any) => {
         return data;
       }),
