@@ -11,6 +11,24 @@
 .finder-results {
     padding: 15px;
     background-color: whitesmoke;
+    min-height: 400px;
+}
+
+.finder-search-info {
+    margin-bottom: 70px;
+}
+
+.finder-search-info__container {
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    width: 230px;
+    border-radius: 10px;
+}
+
+.finder-search-info__icon-arrow-left {
+    margin-top: 20px;
+    width: 10px;
+    height: 10px;
 }
 
 .finder-results__products-container {
@@ -25,4 +43,9 @@
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+}
+
+.footer-container {
+    background-color: blue;
+    height: 10px;
 }

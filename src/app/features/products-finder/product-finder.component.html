@@ -17,19 +17,29 @@
 
         <div class="finder-results">
     
-            <p *ngIf="search">Resultados para <strong>{{ search }}</strong>:</p>
+            <div *ngIf="search" class="finder-search-info">
+                <p class="text-left">Resultados para <strong>{{ search }}</strong>:</p>
+                <div class="finder-search-info__container text-right">
+                    <p class="text-left">Ordenar por: destacados</p>
+                    <img class="icon-arrow-left text-right finder-search-info__icon-arrow-left" src="./../../../assets/imgs/arrow-left.png">
+                </div>
+            </div>
         
             <div class="finder-results__products-container">
                 <app-products [search]="search" [products]="products"></app-products>
             </div>
 
             <div class="finder-info">
-                <span class="text-left">Ver Informacion Legal</span>
-                <span class="text-right">ARROW</span>
+                <span class="text-info text-left">Ver Informacion Legal</span>
+                <img class="icon-arrow-left text-right" src="./../../../assets/imgs/arrow-left.png">
             </div>
 
         </div>
 
+    </section>
+
+    <section id="footer">
+        <div class="footer-container"></div>
     </section>
 
 </div>

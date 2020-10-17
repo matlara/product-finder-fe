@@ -1,22 +1,24 @@
 
-<div *ngFor="let product of products">
+<div class="products-container">
+    <div *ngFor="let product of products">
 
-    <div class="product">
+        <div class="product">
 
-        <div class="product__img-container">
-            <img src="{{product.image}}">
-        </div>
-
-        <div class="product__content">
-            <div class="product__title">
-                <span><strong>{{ product.brand }} </strong></span>
-                <span> {{ product.description }}</span>
+            <div class="product__img-container">
+                <img class="product__img" src="https://{{product.image}}">
             </div>
-            <span class="product__price"><strong>${{ product.newPrice || product.price }} </strong></span>
-            <span *ngIf="isSearchPalindrome()" class="product__discount">50%</span>
-            <p *ngIf="isSearchPalindrome()" class="product__old-price line-through">${{ product.price }}</p>
+
+            <div class="product__content">
+                <div class="product__title">
+                    <span><strong>{{ product.brand }} </strong></span>
+                    <span> {{ product.description }}</span>
+                </div>
+                <span class="product__price"><strong>{{ product.newPrice || product.price | currency }} </strong></span>
+                <span *ngIf="isSearchPalindrome()" class="product__discount">50%</span>
+                <p *ngIf="isSearchPalindrome()" class="product__old-price line-through">{{ product.price | currency }}</p>
+            </div>
+
         </div>
 
     </div>
-
 </div>
