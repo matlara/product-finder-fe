@@ -10,6 +10,11 @@ La campaña consiste en que cada vez que un cliente busque con un palíndromo, t
 Se necesita una Aplicación Web que contenga un buscador y una sección de resultados para listar los productos encontrados desde una base de datos en mongo (https://github.com/walmartdigital/products-db). En caso de que la búsqueda sea un palíndromo se deberá retornar los productos con el descuento (50%) ya aplicado al precio.
 El equipo de negocio ha definido que cuando sea una búsqueda sobre los identificadores de productos se deberá retornar el resultado exacto, es decir, un producto. Mientras que para la marca y para la descripción de productos, basta con que la búsqueda sea de más de 3 caracteres y que estos estén incluidos en los campos ya mencionados (marca y descripción).
 
+## Tecnologias
+
+angular ~8.2.14
+nvm v12.0.0
+
 ## Instalación
 
 ```bash
@@ -18,7 +23,14 @@ npm install
 
 ## Correr el servicio
 
-La app estara corriendo en http://localhost:4200
+Antes de correr este proyecto es necesario tener en consideracion lo siquiente:
+
+* Conseguir el proyecto "product-finder-bff" (https://gitlab.com/MatLara/product-finder-bff) clonarlo, instalarlo con "npm install" e iniciarlo utilizando "npm run start"
+
+* CORS (allow-cors-access-control):
+Ademas es necesario agregar la extension de CORS en el navegador (en este caso Chrome) para poder comunicarse con el proyecto "product-finder-bff" que se puede encontrar en; https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=es
+
+* La app estara corriendo en http://localhost:4200
 
 ```bash
 npm run start
